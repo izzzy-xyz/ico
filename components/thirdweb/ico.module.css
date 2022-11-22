@@ -24,6 +24,13 @@
   .myFloat{
     margin:18px;
   }
+
+@media only screen and (max-width: 550px) {
+    .float {
+      right: 5px;
+      bottom: 10px;
+    }
+  }
   
    .form {
     width: 100vw;
