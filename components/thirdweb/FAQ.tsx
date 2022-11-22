@@ -9,6 +9,7 @@ const FAQ = () => {
   const [two, setTwo] = useState(false)
   const [three, setThree] = useState(false)
   const [four, setFour] = useState(false)
+  const [five, setFive] = useState(false)
   return (
     <div className={styles.componentFirst}>
       <div className={styles.componentSecond}>
@@ -66,11 +67,25 @@ const FAQ = () => {
             )}
             <div className={styles.faqItem} onClick={() => setFour(!four)}>
               <div className={styles.faqItemLeft}>
+                <div className={styles.faqItemTitle}>How to buy IzzzyCoin?</div>
+              </div>
+              <div className={styles.faqItemRight}>{three ? <IconMinus /> : <IconPlus />}</div>
+            </div>
+            {four && (
+              <div className={styles.faqItemAnswer}>
+                <div className={styles.faqItemAnswerText}>
+                Add Polygon Network to your wallet, connect your wallet to the 
+                Polygon network, buy Polygon MATIC, swap MATIC to IZZZY. 
+                </div>
+              </div>
+            )}
+            <div className={styles.faqItem} onClick={() => setFive(!five)}>
+              <div className={styles.faqItemLeft}>
                 <div className={styles.faqItemTitle}>What is the IzzzyCoin roadmap?</div>
               </div>
               <div className={styles.faqItemRight}>{four ? <IconMinus /> : <IconPlus />}</div>
             </div>
-            {four && (
+            {five && (
               <div className={styles.faqItemAnswer}>
                 <div className={styles.faqItemAnswerText}>
                 To learn more about how the IZZZY platform is working, please see: 
@@ -84,6 +99,7 @@ const FAQ = () => {
                 </div>
               </div>
             )}
+            
           </div>
         </div>
       </div>
