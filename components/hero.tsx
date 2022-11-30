@@ -10,16 +10,6 @@ export default function Hero() {
   const [one, setOne] = useState(false)
   return (
     <div className={styles.wrapper}>
-      <h2
-        className={cn(
-          styleUtils.appear,
-          styleUtils['appear-third'],
-          styleUtils['show-on-mobile'],
-          styles.description
-        )}
-      >
-        An interactive blockchain online experience by the community.
-      </h2>
       <div className={styles.bgWrap}>
         <Image
           alt="NFT collection Izzzy website banner"
@@ -32,16 +22,6 @@ export default function Hero() {
         Upcoming
         <br className={styleUtils['show-on-desktop']} /> ICO presale
       </h1>
-      <h2
-        className={cn(
-          styleUtils.appear,
-          styleUtils['appear-third'],
-          styleUtils['show-on-tablet'],
-          styles.description
-        )}
-      >
-        Made through the collaboration of creators, designers, and developers by the crypto community!
-      </h2>
       <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
         <p>IZZZY</p>
         <div className={styles['description-separator']} />
@@ -49,6 +29,16 @@ export default function Hero() {
           <strong>Coin Offering</strong>
         </p>
       </div>
+      <h2
+        className={cn(
+          styleUtils.appear,
+          styleUtils['appear-third'],
+          styleUtils['show-on-mobile'],
+          styles.description
+        )}
+      >
+        An interactive blockchain online experience by the community.
+      </h2>
       <div className={styles.componentFirst}>
         <div className={styles.componentSecond}>
           <div className={styles.faq}>
