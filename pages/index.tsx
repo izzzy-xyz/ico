@@ -6,6 +6,8 @@ import IcoEntry from "../components/thirdweb/ico";
 import Footer from "../components/footer";
 import NavLayout from "../components/nav";
 import FAQ from "../components/thirdweb/FAQ";
+import Hero from "../components/hero";
+import Header from "../components/header";
 
 
 // This is the chainId your dApp will work on.
@@ -33,7 +35,10 @@ export default function Home() {
     </Head>
    <Page meta={meta}>
     <NavLayout children={undefined} />
-    <IcoEntry /><FAQ />
+    <Header hero="Enter pre - ICO" description={meta.description} />
+    <Hero />
+    <IcoEntry />
+    <FAQ />
    </Page>
    <Footer />
   </ThirdwebProvider>

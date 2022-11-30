@@ -69,7 +69,7 @@ const FAQ = () => {
               <div className={styles.faqItemLeft}>
                 <div className={styles.faqItemTitle}>How to buy IzzzyCoin?</div>
               </div>
-              <div className={styles.faqItemRight}>{four ? <IconMinus /> : <IconPlus />}</div>
+              <div className={styles.faqItemRight}>{three ? <IconMinus /> : <IconPlus />}</div>
             </div>
             {four && (
               <div className={styles.faqItemAnswer}>
@@ -83,7 +83,7 @@ const FAQ = () => {
               <div className={styles.faqItemLeft}>
                 <div className={styles.faqItemTitle}>What is the IzzzyCoin roadmap?</div>
               </div>
-              <div className={styles.faqItemRight}>{five ? <IconMinus /> : <IconPlus />}</div>
+              <div className={styles.faqItemRight}>{four ? <IconMinus /> : <IconPlus />}</div>
             </div>
             {five && (
               <div className={styles.faqItemAnswer}>

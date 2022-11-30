@@ -1,4 +1,81 @@
-.faqBC {
+.wrapper {
+    margin-top: var(--space-12x);
+  }
+  
+  .bgWrap {
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .hero {
+    font-size: 52px;
+    line-height: 1.15;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 25px;
+  }
+  
+  .hero {
+    background: -webkit-linear-gradient(145.34deg, #74a5ff 25.75%, #0d5294 79.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .info {
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--space-8x);
+    color: var(--brand);
+  }
+  
+  .description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
+    margin: auto auto 30px;
+    color: var(--secondary-color);
+    max-width: 355px;
+  }
+  
+  .description-separator {
+    height: 24px;
+    width: 1px;
+    background: var(--secondary-color);
+    margin: 0 var(--space-4x); 
+  }
+  
+  .info :global(p) {
+    margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .hero {
+      font-size: 100px;
+      line-height: 1;
+      font-weight: 800;
+      margin: 0 0px 40px;
+    }
+  
+    .info {
+      font-size: 24px;
+      margin-bottom: 80px;
+    }
+  
+    .description {
+      font-size: var(--space-8x);
+      max-width: 531px;
+      margin: 40px auto;
+    }
+  }
+
+  .faqBC {
     background: var(--sidebar);
     position: relative;
     transition: all 0.75s cubic-bezier(0.645, 0.045, 0.355, 1), transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1),
@@ -143,4 +220,5 @@
       font-size: 16px;
     }
   }
+  
   
