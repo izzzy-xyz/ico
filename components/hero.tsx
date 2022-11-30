@@ -33,7 +33,7 @@ export default function Hero() {
         className={cn(
           styleUtils.appear,
           styleUtils['appear-third'],
-          styleUtils['show-on-mobile'],
+          styleUtils['hide-on-mobile'],
           styles.description
         )}
       >
